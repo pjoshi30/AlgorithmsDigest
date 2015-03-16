@@ -16,26 +16,26 @@ public class RateLimiterTest {
 
     private RateLimiter rateLimiter;
 
-    @BeforeMethod (alwaysRun = true)
-    public void init(){
+    @BeforeMethod(alwaysRun = true)
+    public void init() {
         rateLimiter = RateLimiter.valueOf(500);
         runTimer();
     }
 
     private static ScheduledExecutorService exec = Executors.newSingleThreadScheduledExecutor();
 
-    public void runTimer(){
+    public void runTimer() {
         Runnable r = new Runnable() {
             @Override
             public void run() {
                 System.out.println("****Interval of 1 Second****");
             }
         };
-        exec.scheduleAtFixedRate(r,0,1,TimeUnit.SECONDS);
+        exec.scheduleAtFixedRate(r, 0, 1, TimeUnit.SECONDS);
     }
 
-    public void shutdown(){
-        if(!exec.isShutdown()){
+    public void shutdown() {
+        if (!exec.isShutdown()) {
             exec.shutdown();
         }
     }
@@ -43,8 +43,18 @@ public class RateLimiterTest {
     void sendDummyData(byte[] packets) {
         rateLimiter.acquire(packets.length); //This is a blocking call
         //Do Something once the permits are acquired.
-        System.out.println("LENGTH: "+packets.length+ " "+ Thread.currentThread().getName());
+        System.out.println("LENGTH: " + packets.length + " " + Thread.currentThread().getName());
 
+    }
+
+    @Test
+    public void testRl() {
+        char c = 9;
+        int a = Character.digit('1',Character.MIN_RADIX);
+        System.out.println("A="+a);
+        System.out.println("C="+c);
+        char[] chars = "".toCharArray();
+        String[] strings = new String[]{"None", "None"};
     }
 
     @Test
@@ -53,7 +63,7 @@ public class RateLimiterTest {
         Callable<Boolean> r = new Callable<Boolean>() {
             public Boolean call() {
                 final byte[] bytes = new byte[100];
-                Arrays.fill(bytes, Byte.valueOf("01",2));
+                Arrays.fill(bytes, Byte.valueOf("01", 2));
                 sendDummyData(bytes);
                 return true;
             }
