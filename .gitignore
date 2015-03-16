@@ -1,2 +1,5 @@
 algos/.idea/*
-algos/.idea
+algos/target/
+algos/*.iml
+
+.DS_store
