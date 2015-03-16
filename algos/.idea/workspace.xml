@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="773c9340-5784-4996-8e92-3156bbfedccf" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/algo/simple/SubStringChecker.java" afterPath="$PROJECT_DIR$/src/main/java/com/algo/simple/IterativeSubStringChecker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/algo/simple/RecursiveStringContains.java" afterPath="$PROJECT_DIR$/src/main/java/com/algo/simple/RecursiveStringContains.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/algo/simple/RecursiveStringContainsTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/algo/simple/RecursiveStringContainsTest.java" />
     </list>
     <ignored path="algos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,16 +75,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IterativeSubStringChecker.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IterativeSubStringChecker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/algo/simple/IterativeSubStringChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.025356578" vertical-offset="29" max-vertical-offset="690">
-              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-              <folding>
-                <marker date="1426475558000" expanded="true" signature="120:621" placeholder="{...}" />
-                <marker date="1426475558000" expanded="true" signature="666:768" placeholder="{...}" />
-                <marker date="1426475558000" expanded="true" signature="813:1027" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="690">
+              <caret line="38" column="5" selection-start-line="33" selection-start-column="3" selection-end-line="38" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecursiveStringContains.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/algo/simple/RecursiveStringContains.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0721154" vertical-offset="19" max-vertical-offset="615">
+              <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecursiveStringContainsTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/algo/simple/RecursiveStringContainsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="660">
+              <caret line="36" column="60" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,6 +145,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/algo/simple/SubStringChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/algo/simple/IterativeSubStringChecker.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/algo/simple/RecursiveStringContainsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/algo/simple/RecursiveStringContains.java" />
       </list>
     </option>
   </component>
@@ -301,71 +320,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Application.IterativeSubStringChecker">
-    <configuration default="false" name="PrimeTest" type="TestNG" factoryName="TestNG" temporary="true">
-      <module name="algos" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.algo.simple" />
-      <option name="MAIN_CLASS_NAME" value="com.algo.simple.PrimeTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SieveOfEratosThenesTest" type="TestNG" factoryName="TestNG" temporary="true">
-      <module name="algos" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.algo.simple" />
-      <option name="MAIN_CLASS_NAME" value="com.algo.simple.SieveOfEratosThenesTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="56168" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.RecursiveStringContainsTest">
     <configuration default="false" name="MoreMathTest" type="TestNG" factoryName="TestNG" temporary="true">
       <module name="algos" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -442,6 +397,57 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="algos" />
       <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecursiveStringContains" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.algo.simple.RecursiveStringContains" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="algos" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecursiveStringContainsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="algos" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.algo.simple" />
+      <option name="MAIN_CLASS_NAME" value="com.algo.simple.RecursiveStringContainsTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -723,19 +729,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.PrimeTest" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.SieveOfEratosThenesTest" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.MoreMathTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.RateLimiterTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.IterativeSubStringChecker" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.MoreMathTest" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.RateLimiterTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.IterativeSubStringChecker" />
+      <item index="3" class="java.lang.String" itemvalue="Application.RecursiveStringContains" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.RecursiveStringContainsTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.IterativeSubStringChecker" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.RateLimiterTest" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.MoreMathTest" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.SieveOfEratosThenesTest" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.PrimeTest" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.RecursiveStringContainsTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RecursiveStringContains" />
+        <item index="2" class="java.lang.String" itemvalue="Application.IterativeSubStringChecker" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.RateLimiterTest" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.MoreMathTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -786,7 +792,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39920425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -797,7 +803,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.67241377" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262519" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3262519" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="99" y="122" width="1240" height="674" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -824,7 +830,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -836,7 +844,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1155">
           <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -920,7 +928,7 @@
         <state vertical-scroll-proportion="0.7411003" vertical-offset="502" max-vertical-offset="1125">
           <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -943,13 +951,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/algo/simple/IterativeSubStringChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.025356578" vertical-offset="29" max-vertical-offset="690">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <marker date="1426475558000" expanded="true" signature="120:621" placeholder="{...}" />
-            <marker date="1426475558000" expanded="true" signature="666:768" placeholder="{...}" />
-            <marker date="1426475558000" expanded="true" signature="813:1027" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="690">
+          <caret line="38" column="5" selection-start-line="33" selection-start-column="3" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/algo/simple/RecursiveStringContainsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="660">
+          <caret line="36" column="60" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/algo/simple/RecursiveStringContains.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0721154" vertical-offset="19" max-vertical-offset="615">
+          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -9,31 +9,31 @@ import org.testng.annotations.Test;
 public class RecursiveStringContainsTest {
     @Test
     public void testContains(){
-        RecursiveStringContains contains = new RecursiveStringContains("preetam", "tam");
-        Assert.assertTrue(contains.contains());
+        RecursiveStringContains contains = new RecursiveStringContains();
+        Assert.assertTrue(contains.contains("preetam", "tam"));
     }
 
     @Test
     public void testContains2(){
-        RecursiveStringContains contains = new RecursiveStringContains("preetam", "m");
-        Assert.assertTrue(contains.contains());
+        RecursiveStringContains contains = new RecursiveStringContains();
+        Assert.assertTrue(contains.contains("preetam", "m"));
     }
 
     @Test
     public void testContains3(){
-        RecursiveStringContains contains = new RecursiveStringContains("preetam", "ee");
-        Assert.assertTrue(contains.contains());
+        RecursiveStringContains contains = new RecursiveStringContains();
+        Assert.assertTrue(contains.contains("preetam", "ee"));
     }
 
     @Test
     public void testNegative(){
-        RecursiveStringContains contains = new RecursiveStringContains("preetam", "mat");
-        Assert.assertFalse(contains.contains());
+        RecursiveStringContains contains = new RecursiveStringContains();
+        Assert.assertFalse(contains.contains("preetam", "mat"));
     }
 
     @Test
     public void testNegative2(){
-        RecursiveStringContains contains = new RecursiveStringContains("preetam", null);
-        Assert.assertFalse(contains.contains());
+        RecursiveStringContains contains = new RecursiveStringContains();
+        Assert.assertFalse(contains.contains("preetam", null));
     }
 }

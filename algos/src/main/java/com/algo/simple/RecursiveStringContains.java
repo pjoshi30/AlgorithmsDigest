@@ -1,44 +1,35 @@
 package com.algo.simple;
 
-/**
- * Does a recursive check for
- * We can possibly use an inner class (say MyString) and define all the
- * String functions used here inside it - if using any functions of class String is not allowed.
- *
- * @author preetam
- */
+import com.google.common.base.Strings;
+
 public class RecursiveStringContains {
 
-    private final char[] s;
-    private final char[] t;
-
-    public RecursiveStringContains(String s, String t) {
-        this.s = s == null ? null : s.toCharArray();
-        this.t = t == null ? null : t.toCharArray();
+    private String originalTarget;
+    public boolean contains(String inp, String target) {
+        originalTarget = target;
+        return containsHelper(inp, target);
     }
 
-    public boolean contains() {
-        if (t == null || t.length == 0) {
+    public boolean containsHelper(String inp, String target) {
+        if(Strings.isNullOrEmpty(inp) || Strings.isNullOrEmpty(target) || target.length() > inp.length() ){
             return false;
         }
-        for (int i = 0; i < s.length; i++) {
-            if (s[i] != t[0]) {
-                while (++i < s.length && s[i] != t[0]) ;
-            }
-            //Found the first element
-            int counter = 0;
-            for (int k = 0; k < t.length && i < s.length; k++) {
-                if (s[i] != t[k]) {
-                    continue;
-                }
-                counter++;
-                i++;
-            }
-            if (counter == t.length) {
-                return true;
-            }
+
+        boolean matched = (inp.charAt(0) == target.charAt(0));
+
+        if( matched && target.length() == 1){
+            return true;
+        } else if (matched){
+            return containsHelper(inp.substring(1, inp.length()), target.substring(1, target.length()));
         }
-        return false;
+        return containsHelper(inp.substring(1, inp.length()), originalTarget);
+    }
+
+    public static void main(String... args){
+        RecursiveStringContains checker = new RecursiveStringContains();
+
+        System.out.println(checker.contains("abate", "bat" ));
+        System.out.println(checker.contains("beat", "bat" ));
     }
 
 }
