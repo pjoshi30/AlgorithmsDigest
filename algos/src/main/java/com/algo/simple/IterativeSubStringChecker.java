@@ -1,7 +1,7 @@
 package com.algo.simple;
 
 
-public class SubStringChecker {
+public class IterativeSubStringChecker {
 
 
     boolean isSubstring(String target, String inp){
@@ -32,7 +32,7 @@ public class SubStringChecker {
     }
 
     public static void main(String... args){
-        SubStringChecker checker = new SubStringChecker();
+        IterativeSubStringChecker checker = new IterativeSubStringChecker();
 
         System.out.println(checker.isSubstring("bat", "abate"));
         System.out.println(checker.isSubstring("bat", "beat"));
